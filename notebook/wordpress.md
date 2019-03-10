@@ -18,3 +18,4 @@ class SomeClass:
 >>> message = '''interpreter
 ... prompt'''
  ```
+123
