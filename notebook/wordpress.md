@@ -18,4 +18,5 @@ class SomeClass:
 >>> message = '''interpreter
 ... prompt'''
  ```
-123
+123'
+<hr>
