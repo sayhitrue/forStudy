@@ -13,10 +13,24 @@
 #### 常用配置
 - 重要快捷键
 
-|快捷键|含义|用法|备注|
-|:-:||||
-|`CRLT+ALT+S`|调出setting| ||
-|`ALT+INSERT`|generate|自动补类中的set、get、构造函数等等|快捷键可在keymap中设置`generate`|
+|快捷键|用法|备注|
+|:-:|||
+|`CRLT+ALT+S`|调出setting ||
+|`ALT+INSERT`|generate自动补类中的set、get、构造函数等等|快捷键可在keymap中设置`generate`|
+|`SHIFT+F6`|改文件名字|idea快捷键，eclipse不同|
+|`ALT+ENTER`|自动异常捕获|idea快捷键，eclipse不同|
+|`CTRL+ALT+V`|new了对象之后自动取名|idea快捷键，eclipse不同|
+|`SHIFT+F6`|改名字|idea快捷键，eclipse不同|
+
+- LIVE TEMPLATE
+
+
+参考https://www.cnblogs.com/chenfangzhi/p/liveTemplate.html
+
+|缩写|含义|备注|
+|:-:|||
+|`psvm`|main函数 ||
+
 - setting中的常用配置
 
 |配置项|搜索关键词|作用|准备位置|
@@ -26,4 +40,10 @@
 |自动导入包|`auto import`|||
 |快捷键|`key map`|可切换其他IDE的快捷键，还可以编辑||
 
-- asd
+- keymap中常用配置
+
+|配置项|搜索关键词|用法|快捷键|
+|:-:||||
+|异常捕获|`intention`|自动抛出异常或者自动补全try|`ALT+ENTER`|
+|自动取名|`varable`|自动取变量名称，省的想|`CTRL+ALT+V`|
+|删除一行|`delete`|删除一行|`CTRL+Y`|
