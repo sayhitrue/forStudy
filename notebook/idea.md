@@ -13,14 +13,14 @@
 #### 常用配置
 - 重要快捷键
 
-|快捷键|用法|备注|
-|:-:|||
-|`CRLT+ALT+S`|调出setting ||
-|`ALT+INSERT`|generate自动补类中的set、get、构造函数等等|快捷键可在keymap中设置`generate`|
-|`SHIFT+F6`|改文件名字|idea快捷键，eclipse不同|
-|`ALT+ENTER`|自动异常捕获|idea快捷键，eclipse不同|
-|`CTRL+ALT+V`|new了对象之后自动取名|idea快捷键，eclipse不同|
-|`SHIFT+F6`|改名字|idea快捷键，eclipse不同|
+快捷键|用法|备注
+:-:|:-:|:-:
+`CRLT+ALT+S`|调出setting |
+`ALT+INSERT`|generate自动补类中的set、get、构造函数等等|快捷键可在keymap中设置`generate`
+`SHIFT+F6`|改文件名字|idea快捷键，eclipse不同
+`ALT+ENTER`|自动异常捕获|idea快捷键，eclipse不同
+`CTRL+ALT+V`|new了对象之后自动取名|idea快捷键，eclipse不同
+`SHIFT+F6`|改名字|idea快捷键，eclipse不同
 
 - LIVE TEMPLATE
 
@@ -33,26 +33,18 @@
 
 - setting中的常用配置
 
-|配置项|搜索关键词|作用|准备位置|
-|:-:||||
-|编码格式|`encoding`|字符编码推荐使用UTF-8||
-|忽略大小写|`completion`|代码提示时大小写敏感不会提示|`case sensitive completion`|
-|自动导入包|`auto import`|||
-|快捷键|`key map`|可切换其他IDE的快捷键，还可以编辑||
+配置项|搜索关键词|作用|准备位置
+:-:|||
+编码格式|`encoding`|字符编码推荐使用UTF-8|
+忽略大小写|`completion`|代码提示时大小写敏感不会提示|`case sensitive completion`
+自动导入包|`auto import`||
+快捷键|`key map`|可切换其他IDE的快捷键，还可以编辑|
 
 - keymap中常用配置
 
-|配置项|搜索关键词|用法|快捷键|
-|:-:||||
-|异常捕获|`intention`|自动抛出异常或者自动补全try|`ALT+ENTER`|
-|自动取名|`varable`|自动取变量名称，省的想|`CTRL+ALT+V`|
-|删除一行|`delete`|删除一行|`CTRL+Y`|
-|复制一行|||
-
-
-表格
-
-  表头  | 表头
-  ------------- | -------------
- 单元格内容  | 单元格内容
- 单元格内容l  | 单元格内容
+配置项|搜索关键词|用法|快捷键
+:-:|||
+异常捕获|`intention`|自动抛出异常或者自动补全try|`ALT+ENTER`
+自动取名|`varable`|自动取变量名称，省的想|`CTRL+ALT+V`
+删除一行|`delete`|删除一行|`CTRL+Y`
+复制一行||
