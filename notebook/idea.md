@@ -47,3 +47,4 @@
 |异常捕获|`intention`|自动抛出异常或者自动补全try|`ALT+ENTER`|
 |自动取名|`varable`|自动取变量名称，省的想|`CTRL+ALT+V`|
 |删除一行|`delete`|删除一行|`CTRL+Y`|
+|复制一行|||
