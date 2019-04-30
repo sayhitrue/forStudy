@@ -34,7 +34,7 @@
 - setting中的常用配置
 
 配置项|搜索关键词|作用|准备位置
-:-:|||
+:-:|:-:|:-:|:-:
 编码格式|`encoding`|字符编码推荐使用UTF-8|
 忽略大小写|`completion`|代码提示时大小写敏感不会提示|`case sensitive completion`
 自动导入包|`auto import`||
@@ -43,7 +43,7 @@
 - keymap中常用配置
 
 配置项|搜索关键词|用法|快捷键
-:-:|||
+:-:|:-:|:-:|:-:
 异常捕获|`intention`|自动抛出异常或者自动补全try|`ALT+ENTER`
 自动取名|`varable`|自动取变量名称，省的想|`CTRL+ALT+V`
 删除一行|`delete`|删除一行|`CTRL+Y`
