@@ -20,7 +20,6 @@
 `SHIFT+F6`|改文件名字|idea快捷键，eclipse不同
 `ALT+ENTER`|自动异常捕获|idea快捷键，eclipse不同
 `CTRL+ALT+V`|new了对象之后自动取名|idea快捷键，eclipse不同
-`SHIFT+F6`|改名字|idea快捷键，eclipse不同
 `CTRL+D`|复制该行|见keymap
 `CTRL+SHIFT+UP/DOWN`|该行向上/下移|见keymap
 `CTRL+N`|搜索类|见keymap
@@ -32,9 +31,22 @@
 参考https://www.cnblogs.com/chenfangzhi/p/liveTemplate.html
 $END$ 光标位置
 
+
+
 缩写|含义|备注
 :-:|:-:|:-:
 `psvm`|main函数|
+
+- FILE AND CODE TEMPLATES
+  - FILE HEADER
+
+  ```
+  /**
+ * Author: Nevermore
+ * Date: ${YEAR}-${MONTH}-${DAY} ${TIME}
+ * Description:<描述>
+ */
+  ```
 
 - setting中的常用配置
 
@@ -44,6 +56,7 @@ $END$ 光标位置
 忽略大小写|`completion`|代码提示时大小写敏感不会提示|`case sensitive completion`
 自动导入包|`auto import`||
 快捷键|`key map`|可切换其他IDE的快捷键，还可以编辑|
+代码检查|`inspections`|拼写、代码等检查|IDEA右下角的图标是代码检查级别
 
 - keymap中常用配置
 
