@@ -49,3 +49,50 @@ rpm -ivh mysql80-community-release-el7-3.noarch.rpm
 yum install mysql-server
 
 https://www.cnblogs.com/DarrenChan/p/6622233.html
+
+yum安装时rpm包的目录
+/var/cache/yum/x86_64/7
+也可以直接下载好放到这么目录
+yum安装目录/var/lib
+
+service mysqld start
+
+安装php及组件
+yum install php php-mysql
+yum install php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc
+
+vi /var/www/html/info.php
+
+<?php
+phpinfo();
+?>
+
+下载wordpress，解压缩拷贝到服务器上
+
+mysql建立数据库
+<!-- vi /etc/my.cnf
+添加：skip-grant-tables   跳过密码
+重启数据库service mysqld restart
+直接输入mysql登录数据库
+use mysql;
+update user set password=password("你的新密码") where user="root";
+如：update user set password=password("password") where user="root";
+update user set password=password("123") where user="root";
+ALTER USER root@localhost IDENTIFIED  BY 'password';
+刷新权限：flush privileges;
+退出：quit -->
+
+grep 'temporary password' /var/log/mysqld.log
+初始化密码在这个日志目录中
+mysql -u root -p
+输出临时密码
+ALTER USER root@localhost IDENTIFIED  BY 'Kjb,4286';
+现在密码必须包含大写字母、小写字母、特殊符号。
+
+
+./configure --prefix=/usr/local/php  --with-curl=/usr/local/curl  --with-freetype-dir  --with-gd  --with-gettext  --with-iconv-dir  --with-kerberos  --with-libdir=lib64  --with-libxml-dir  --with-mysqli  --with-openssl  --with-pcre-regex  --with-pdo-mysql  --with-pdo-sqlite  --with-pear  --with-png-dir  --with-xmlrpc  --with-xsl  --with-zlib  --enable-fpm  --enable-bcmath  --enable-libxml  --enable-inline-optimization  --enable-mbregex  --enable-mbstring  --enable-opcache  --enable-pcntl  --enable-shmop  --enable-soap  --enable-sockets  --enable-sysvsem  --enable-xml  --enable-zip
+
+
+/etc/httpd/conf/httpd.conf
+
+php70w-pdo.x86_64 
