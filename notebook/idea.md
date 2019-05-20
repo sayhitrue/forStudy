@@ -17,6 +17,7 @@
 :-:|:-:|:-:
 `CRLT+ALT+S`|调出setting |
 `ALT+INSERT`|generate自动补类中的set、get、构造函数等等|快捷键可在keymap中设置`generate`
+`ALT+INSERT`|鼠标放到包上，新建文件|
 `SHIFT+F6`|改文件名字|idea快捷键，eclipse不同
 `ALT+ENTER`|自动异常捕获|idea快捷键，eclipse不同
 `CTRL+ALT+V`|new了对象之后自动取名|idea快捷键，eclipse不同
@@ -24,6 +25,7 @@
 `CTRL+SHIFT+UP/DOWN`|该行向上/下移|见keymap
 `CTRL+N`|搜索类|见keymap
 `CTRL+H`|查看继承关系|见keymap
+`CTRL+ALT+V`|把变量提取到上方|右键+refactor+extract+property
 
 - LIVE TEMPLATE
 
