@@ -73,4 +73,5 @@ $END$ 光标位置
 #### 常见问题
 1. IntelliJ IDEA: 无法创建Java Class文件<br>
 解决方案：选择 File——>Project Structure——>Project Settings——>Modules：
-选择main文件夹右键设置为源文件夹，即可。
+选择main下面的java文件夹右键设置为源文件夹，即可。
+java文件夹不能设置为一级包名字
