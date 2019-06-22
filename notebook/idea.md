@@ -69,3 +69,8 @@ $END$ 光标位置
 删除一行|`delete`|删除一行|`CTRL+Y`
 复制一行|`duplicate`|复制该行到下一行|`CTRL+D`
 该行向上/下移|`move`|该行向上/下移|`CTRL+SHIFT+UP/DOWN`
+
+#### 常见问题
+1. IntelliJ IDEA: 无法创建Java Class文件<br>
+解决方案：选择 File——>Project Structure——>Project Settings——>Modules：
+选择main文件夹右键设置为源文件夹，即可。
