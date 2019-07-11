@@ -89,10 +89,13 @@ mysql -u root -p
 ALTER USER root@localhost IDENTIFIED  BY 'Kjb,4286';
 现在密码必须包含大写字母、小写字母、特殊符号。
 
+如果要使用navicat登陆的话，需要执行下面的语句
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Kjb,4286';
+
 
 ./configure --prefix=/usr/local/php  --with-curl=/usr/local/curl  --with-freetype-dir  --with-gd  --with-gettext  --with-iconv-dir  --with-kerberos  --with-libdir=lib64  --with-libxml-dir  --with-mysqli  --with-openssl  --with-pcre-regex  --with-pdo-mysql  --with-pdo-sqlite  --with-pear  --with-png-dir  --with-xmlrpc  --with-xsl  --with-zlib  --enable-fpm  --enable-bcmath  --enable-libxml  --enable-inline-optimization  --enable-mbregex  --enable-mbstring  --enable-opcache  --enable-pcntl  --enable-shmop  --enable-soap  --enable-sockets  --enable-sysvsem  --enable-xml  --enable-zip
 
 
 /etc/httpd/conf/httpd.conf
 
-php70w-pdo.x86_64 
+php70w-pdo.x86_64
