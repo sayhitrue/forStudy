@@ -24,3 +24,5 @@ getenforce
 docker export {容器名称} > {带文件名的路径}
 容器导入
 docker import <文件路径>  <容器名>
+
+容器运行需要一个command，需要在导出的时候记下来或者配置好，一些官方制作的容器都是配置好的，所以不用带
