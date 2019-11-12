@@ -23,6 +23,35 @@ configure常用参数
 ## Linux服务器上nignx编译&安装
 ##### 生成Makefile
 ```sh
-./configure --prefix=/Nginx
+./configure --prefix=/Nginx                 //生成Makefile
 ```
-`./configure --prefix=/Nginx`
+##### 编译和安装
+```sh
+make && make install
+```
+##### 重新编译和安装
+```sh
+make clean
+make && make install
+```
+## nignx服务器目录
+- conf 配置文件，其中nginx.conf为主配置文件，.default文件为默认配置文件
+- html nignx调试相关的网页文件
+- logs 日志
+- sbin nginx主程序  
+```sh
+./nignx -h            //可获取nginx二进制文件的相关用法
+./nignx -?
+./nginx -v           //打印版本号
+./nginx -V           //打印版本号和配置
+./ngixn -s signal    //向主进程发送信号  
+```
+
+## nginx服务器信号控制
+```sh
+./ngixn -s signal    //向主进程发送信号
+```
+- stop — fast shutdown
+- quit — graceful shutdown
+- reload — reloading the configuration file
+- reopen — reopening the log files
