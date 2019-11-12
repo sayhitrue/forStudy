@@ -40,7 +40,7 @@ make && make install
 - logs 日志
 - sbin nginx主程序  
 ```sh
-./nignx -h            //可获取nginx二进制文件的相关用法
+./nignx -h           //可获取nginx二进制文件的相关用法
 ./nignx -?
 ./nginx -v           //打印版本号
 ./nginx -V           //打印版本号和配置
@@ -55,3 +55,34 @@ make && make install
 - quit — graceful shutdown
 - reload — reloading the configuration file
 - reopen — reopening the log files
+
+## nginx配置文件
+##### nginx 文件结构
+```
+...              #全局块
+events {         #events块
+   ...
+}
+
+http      #http块
+{
+    ...   #http全局块
+    server        #server块
+    {
+        ...       #server全局块
+        location [PATTERN]   #location块
+        {
+            ...
+        }
+        location [PATTERN]
+        {
+            ...
+        }
+    }
+    server
+    {
+      ...
+    }
+    ...     #http全局块
+}
+```
