@@ -20,8 +20,9 @@ configure常用参数
 --user=name|在nginx.conf文件未指定user情况下，默认nginx服务器进程的属主用户，默认nobody
 --add-module=path|指定第三方模块的路径，用以编译到nginx服务器中
 
-
-
-
-
-## Linux服务器上nignx安装
+## Linux服务器上nignx编译&安装
+##### 生成Makefile
+```sh
+./configure --prefix=/Nginx
+```
+`./configure --prefix=/Nginx`
