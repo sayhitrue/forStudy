@@ -91,3 +91,6 @@ http      #http块
 - http块：可以嵌套多个server，配置代理，缓存，日志定义等绝大多数功能和第三方模块的配置。如文件引入，mime-type定义，日志自定义，是否使用sendfile传输文件，连接超时时间，单连接请求数等。
 - server块：配置虚拟主机的相关参数，一个http中可以有多个server。
 - location块：配置请求的路由，以及各种页面的处理情况。
+
+## 变量
+https://nginx.org/en/docs/http/ngx_http_core_module.html
