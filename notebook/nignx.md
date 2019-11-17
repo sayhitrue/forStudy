@@ -1,6 +1,6 @@
 ## nginx简介
 <p align="left">
-  <a><img src="https://img.shields.io/badge/-Nignx-green?style=flat-square&logo=appveyor" alt="pig"></a>
+  <a><img src="https://img.shields.io/badge/-Nignx-orange?style=flat-square&logo=appveyor" alt="pig"></a>
   <a><img src="https://img.shields.io/badge/sayhitrue-1117-blue?style=flat-square&logo=appveyor" alt="pig"></a>
 </p>
 
