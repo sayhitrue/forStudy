@@ -1,6 +1,7 @@
 ## nginx简介
-<p align="center">
-  <a><img src="https://img.shields.io/badge/-Nignx-green" alt="pig"></a>
+<p align="left">
+  <a><img src="https://img.shields.io/badge/-Nignx-green?style=flat-square&logo=appveyor" alt="pig"></a>
+  <a><img src="https://img.shields.io/badge/-sayhitrue-gray?style=flat-square&logo=appveyor" alt="pig"></a>
 </p>
 
 Nginx是一款轻量级的Web 服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器。
