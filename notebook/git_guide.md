@@ -249,3 +249,52 @@ config指令除了上述参数设置用户名密码外，还有许多参数，�
 
         #config文件保存本地配置信息，同如下指令
         $git config --local -l    #如果你配置本地化的用户名和邮箱的话，就会在这边显示
+
+commit、tree、blob三种git对象类型
+
+    git cat-file -t <object>  #对象类型只有这三种
+
+[git官网对于三种对象的解释](https://git-scm.com/book/zh/v2/Git-%E5%86%85%E9%83%A8%E5%8E%9F%E7%90%86-Git-%E5%AF%B9%E8%B1%A1)
+
+commit只对应一个tree，一个tree相当于一个目录，blob就是文件，只记录文件内容，跟文件名没有关系。
+
+
+
+分离头指针
+
+如果不小心通过git checkout命令切换到某个commit中（即HEAD指向某个commit），git会提示我们正处于分离头指针的状态下（工作在没有分支的情况下），如果我们做了大量的修改，但是某天我们突然又切换到另一个commit时，我们的修改就有可能被git当做垃圾清除掉，因此这个动作十分危险。
+
+记住一点：如果某个变更（提交）是非常重要的，那么一定要跟某个分支绑定在一起。
+
+    #分离头指针
+    $ git checkout 4db0b53f1a6
+    Note: checking out '4db0b53f1a6'.
+
+    You are in 'detached HEAD' state. You can look around, make experimental
+    changes and commit them, and you can discard any commits you make in this
+    state without impacting any branches by performing another checkout.
+
+    If you want to create a new branch to retain commits you create, you may
+    do so (now or later) by using -b with the checkout command again. Example:
+
+      git checkout -b <new-branch-name>
+
+    HEAD is now at 4db0b53 Add 1.txt
+
+    #这时候如果有改动，再切到其他分支，会丢失。
+    #需要保留的重要东西一定要在分支上。
+    #创建分支
+    git checkout -b <new-branch-name> #导出的时候就创建好
+    git branch <new-branch-name> <object>  #创建分支
+    git branch -av
+
+    gitk -all
+
+比较
+
+    $ git diff -h
+    usage: git diff [<options>] [<commit> [<commit>]] [--] [<path>...]
+
+    git diff HEAD HEAD^ #跟前一次比较
+    git diff HEAD HEAD^1^1 #跟倒数第二次比较
+    git diff HEAD HEAD~3 #跟倒数第三次比较
