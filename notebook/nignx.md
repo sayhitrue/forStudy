@@ -494,3 +494,15 @@ http.createServer(function (request, response) {
 // 终端打印如下信息
 console.log('Server running at http://127.0.0.1:8888/');
 ```
+
+
+
+if ($time_iso8601 ~ "^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})")
+{
+    set $year $1;
+    set $month $2;
+    set $day $3;
+    set $hour $4;
+    set $minutes $5;
+    set $seconds $6;
+}
